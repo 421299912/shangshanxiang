@@ -18,6 +18,7 @@ import Qs from 'qs'
 
 
 
+
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 Vue.prototype.Qs = Qs
