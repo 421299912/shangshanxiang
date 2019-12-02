@@ -1,0 +1,10 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "favicon.ico"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}

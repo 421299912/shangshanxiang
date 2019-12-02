@@ -1,0 +1,51 @@
+<template>
+  <v-ons-navigator swipeable swipe-target-width="50px"
+                   :page-stack="pageStack"
+                   :pop-page="storePop"
+                   :options="options"
+                   @postpush="showPopTip"
+                   :class="{ 'border-radius': borderRadius }"
+  ></v-ons-navigator>
+</template>
+
+<script>
+  // import AppSplitter from './AppSplitter.vue'
+  import Login from './components/Login'
+  export default {
+    beforeCreate () {
+      this.$store.commit('navigator/push', Login)
+    },
+    data () {
+      return {
+        shutUp: this.md
+      }
+    },
+    computed: {
+      pageStack () {
+        return this.$store.state.navigator.stack
+      },
+      options () {
+        return this.$store.state.navigator.options
+      },
+      borderRadius () {
+        // 此处低版本不兼容，如华为meat8
+        // return new URL(window.location).searchParams.get('borderradius') !== null
+        return true
+      }
+    },
+    methods: {
+      storePop () {
+        this.$store.commit('navigator/pop')
+      },
+      showPopTip () {
+        /*!this.shutUp && this.$ons.notification.toast({
+          message: 'Try swipe-to-pop from left side!',
+          buttonLabel: 'Shut up!',
+          timeout: 2000
+        }).then(i => {
+          this.shutUp = i === 0
+        })*/
+      }
+    }
+  }
+</script>

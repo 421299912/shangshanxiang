@@ -1,0 +1,74 @@
+
+.login-bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    background-image: url(../images/login/login-background.jpg);
+    background-size:100% auto;
+}
+
+.login-bg-img {
+    width: 100%;
+    height: 100%;
+}
+
+.login-bg-img .logo-bg {
+    height: 35%;
+    text-align: center;
+    min-height: 160px;
+}
+
+.login-bg-img .logo-bg > img {
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+}
+
+.login-bg-img .login-content {
+    padding: 0px 50px;
+    width: auto;
+}
+
+.login-bg-img .login-content > input {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login-bg-img .login-content .validate {
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+
+.login-bg-img .login-content .validate > input {
+    width: 55%;
+    height: auto;
+    padding: 10px;
+}
+
+.login-bg-img .login-content .validate > img {
+    height: 30px;
+    margin: 4px;
+    max-width: 40%;
+}
+
+.login-bg-img .login-content .error {
+    font-size: 14px;
+    color: red;
+}
+
+.login-bg-img .login-content .loginbtn {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #8EC603;
+}
+
+.login-bg-img .login-content .forget {
+    padding: 0;
+    margin-top: 10px;
+    font-size: 14px;
+}
